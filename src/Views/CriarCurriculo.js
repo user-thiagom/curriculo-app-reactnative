@@ -1,12 +1,12 @@
 import React from 'react'
 import { View, Text } from 'react-native'
 
-const Curriculos = () => {
+const CriarCurriculo = () => {
     return (
         <View>
-            <Text>Tela dos Curriculos</Text>
+            <Text>Tela de criação de curriculo</Text>
         </View>
     )
 }
 
-export default Curriculos
+export default CriarCurriculo
