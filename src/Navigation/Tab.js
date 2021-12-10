@@ -7,7 +7,7 @@ const Tab = createMaterialBottomTabNavigator()
 
 export default props => {
     return (
-        <Tab.Navigator>
+        <Tab.Navigator activeColor="#f11" barStyle={{backgroundColor: "#000"}}>
             <Tab.Screen name="Curriculos" component={Curriculos}/>
             <Tab.Screen name="Criar Curriculo" component={CriarCurriculo}/>
         </Tab.Navigator>

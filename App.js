@@ -1,6 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import { Appbar } from 'react-native-paper';
 import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context'
 import Navigation from './src/Navigation'
 
@@ -8,7 +9,11 @@ export default function App() {
   return (
     <SafeAreaProvider>
       <SafeAreaView style={styles.container}>
-        <Navigation/>
+      <Appbar.Header style={styles.appbar} statusBarHeight={0}>
+        <Appbar.Content title="CurriculoPlus +"/>
+      </Appbar.Header>
+
+      <Navigation/>
       </SafeAreaView>
     </SafeAreaProvider>
     
@@ -18,8 +23,11 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#000',
     //alignItems: 'center',
     //justifyContent: 'center',
   },
+  appbar: {
+    backgroundColor: '#000'
+  }
 });
