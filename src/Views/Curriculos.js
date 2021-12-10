@@ -3,7 +3,7 @@ import { View, Text } from 'react-native'
 
 const Curriculos = () => {
     return (
-        <View>
+        <View style={{backgroundColor:'#f54'}}>
             <Text>Tela dos Curriculos</Text>
         </View>
     )
