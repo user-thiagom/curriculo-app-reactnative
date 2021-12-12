@@ -1,12 +1,19 @@
 import React from 'react'
-import { View, Text } from 'react-native'
+import { ScrollView, StyleSheet } from 'react-native'
 
 const CriarCurriculo = () => {
     return (
-        <View style={{backgroundColor: '#f84'}}>
-            <Text>Tela de criação de curriculo</Text>
-        </View>
+        <ScrollView style={styles.container}>
+            
+        </ScrollView>
     )
 }
 
 export default CriarCurriculo
+
+const styles = StyleSheet.create({
+    container:{
+        backgroundColor: '#741'
+    },
+
+})
