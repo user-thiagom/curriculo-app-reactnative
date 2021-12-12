@@ -5,6 +5,7 @@ import { Appbar } from 'react-native-paper';
 import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context'
 import { QueryClientProvider, QueryClient } from 'react-query';
 import Navigation from './src/Navigation'
+import { FormProvider } from './src/Providers/form';
 
 const queryClient = new QueryClient()
 
@@ -17,7 +18,10 @@ export default function App() {
           <Appbar.Content title="CurriculoPlus +"/>
         </Appbar.Header>
 
-        <Navigation/>
+        <FormProvider>
+          <Navigation/>
+        </FormProvider>
+        
         <StatusBar/>
         </SafeAreaView>
       </SafeAreaProvider>
